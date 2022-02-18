@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'CircularStd-Bold';
+    src: url("./assets/fonts/CircularStd-Black.ttf")
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'CircularStd-SemiBold';
+    src: url("./assets/fonts/CircularStd-Bold.ttf")
 }
+
+@font-face {
+    font-family: 'CircularStd-Medium';
+    src: url("./assets/fonts/CircularStd-Medium.ttf")
+}
+
+@font-face {
+    font-family: 'CircularStd-Regular';
+    src: url("./assets/fonts/CircularStd-Book.ttf")
+}
+
+
+.border-gradient-color {
+    border-image-source: linear-gradient(to left, #5C8AE5, #5E1C80);
+  }
