@@ -9,7 +9,6 @@ import { Drawer, DrawerContent, Menu, useDisclosure } from '@chakra-ui/react'
 export default function DriverScreen() {
 
     const [tab, setTab] = React.useState(1)
-    const { isOpen, onOpen, onClose } = useDisclosure();
 
     const FirstStage =()=> {
         return(
@@ -101,21 +100,9 @@ export default function DriverScreen() {
 
     return (
         <div className='w-full h-full relative' >
-            <div className='w-full fixed z-10' >
+            {/* <div className='w-full fixed z-10' >
               <Navbar color='dark' />
-            </div> 
-            <div className=' lg:hidden flex' >
-                <Drawer 
-                    size='xs'
-                    isOpen={isOpen}
-                    placement="left"
-                    onClose={onClose}  > 
-                    <DrawerContent>
-                        {/* <DrawerCloseButton  /> */}
-                        {/* <Menu index={tab} close={onClose} mobile={true} tab={setTab} /> */}
-                    </DrawerContent>
-                </Drawer>
-            </div>
+            </div>  */}
             <div className='relative w-full' > 
                 <img src={Header} className=''  alt='' />
                 <div className='absolute bottom-0 w-full flex justify-center px-14 ' > 

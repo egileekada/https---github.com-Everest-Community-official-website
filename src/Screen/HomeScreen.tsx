@@ -14,9 +14,6 @@ import Footer from '../components/Footer'
 export default function HomeScreen() {
   return (
     <div className='w-full h-full' >
-        <div className='w-full' >
-          <Navbar />
-        </div>
         <div style={{backgroundColor: '#EEEEEE'}} className='w-full' >  
           <FirstSection />
         </div>
