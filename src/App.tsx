@@ -1,7 +1,7 @@
 import { useDisclosure } from '@chakra-ui/hooks';
 import { Drawer, DrawerContent } from '@chakra-ui/react';
 import React from 'react'; 
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';   
+import { BrowserRouter as Router, Routes, Route, useLocation, } from 'react-router-dom';   
 import Navbar from './components/Navbar';
 import SideBar from './components/SideBar';
 import DriverScreen from './Screen/DriverScreen';
@@ -11,10 +11,22 @@ import RiderScreen from './Screen/RiderScreen';
 import SubscriptionScreen from './Screen/SubscriptionScreen';
 
 function App() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure(); 
+
+  function ScrollToTop() { 
+
+    const location = useLocation()
+    React.useEffect(() => {
+      
+      window.scrollTo(0, 0);
+    }, [location])
+  
+    return null
+  } 
+
   return ( 
     <Router>  
-      <div className='w-full absolute z-50' style={{height: '80px'}} >
+      <div className='w-full fixed top-0 z-50' style={{height: '80px'}} >
         <Navbar open={onOpen}  />
       </div>
       <div className=' lg:hidden flex' >
@@ -30,6 +42,7 @@ function App() {
               </DrawerContent>
           </Drawer>
       </div>
+      <ScrollToTop />
       <Routes>  
         <Route path='/' element={<HomeScreen />}/> 
         <Route path='/rider' element={<RiderScreen />}/> 

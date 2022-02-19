@@ -49,12 +49,12 @@ export default function (props: any) {
 
   return (
     <div style={color === 'dark' ? {backgroundColor: 'rgba(2, 4, 5, 0.7)', height: '80px'} : {backgroundColor: '#FFFFFF', height: '80px'}} className='w-full flex items-center px-6 lg:px-12' >
-      <div onClick={()=> ClickHandler('')} className='flex cursor-pointer item-center' >
+      <div className='flex cursor-pointer item-center' >
       <svg onClick={()=> props.open()} className='mr-4 lg:hidden' height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" >
         <path className='fill-current text-[#1084FA]' d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
       </svg>
-        <img src={Logo} alt='logo' className=' h-8 ' />
-        <p className={color === 'dark' ? 'ml-4 lg:flex hidden font-CircularStd-Regular lg:text-3xl text-white text-xl' : 'ml-4 lg:flex hidden font-CircularStd-Regular text-xl lg:text-3xl'} >Everest</p>
+        <img onClick={()=> ClickHandler('')} src={Logo} alt='logo' className=' h-8 cursor-pointer ' />
+        <p onClick={()=> ClickHandler('')}  className={color === 'dark' ? 'ml-4 lg:flex hidden font-CircularStd-Regular lg:text-3xl text-white text-xl' : 'ml-4 lg:flex hidden font-CircularStd-Regular text-xl lg:text-3xl'} >Everest</p>
       </div>
       <div className='mx-auto hidden lg:flex item-center mt-2' >
         {/* <Link to='/rider' > */}

@@ -9,6 +9,7 @@ export default function Menu(props: any) {
 
     React.useEffect(() => {
         localStorage.setItem('index', tab)
+        localStorage.setItem('tab', tab.toLowerCase()) 
     },[tab]) 
 
     const ClickHandler =(index: any)=> { 
