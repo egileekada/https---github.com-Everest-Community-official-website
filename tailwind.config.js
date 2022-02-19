@@ -40,6 +40,14 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      everestdark: '#222222',
+      firstcolor: '#EEEEEE',
+      '72': '#727272',
+      '22': '#222222',
+      '52': 'rgba(51, 51, 51, 0.9)',
+      '0b':'#0B85FD',
+      '02':'#020405',
+      '00a':'00A0FF'
     }),
     columns: {
       auto: 'auto',

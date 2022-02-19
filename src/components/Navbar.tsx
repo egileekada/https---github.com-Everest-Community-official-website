@@ -13,10 +13,15 @@ export default function (props: any) {
     if(tab !== ''){
       localStorage.setItem('color', 'dark')
       setColor('dark')
-    }else{ 
+    }else { 
       localStorage.setItem('color', '')
       setColor('')
     } 
+
+    if(tab === "faq"){
+      localStorage.setItem('color', '')
+      setColor('')
+    }
 
     if(tab === ''){ 
         navigate('/'+tab) 
@@ -24,9 +29,12 @@ export default function (props: any) {
         navigate('/'+tab)
     } else if(tab === 'driver'){  
         navigate('/'+tab)
-    } 
+    } else if(tab === 'faq'){  
+      navigate('/'+tab)
+    } else if(tab === 'subscription'){  
+      navigate('/'+tab)
+    }  
   }, [tab, color])
-
 
   React.useEffect(() => {
     if(localStorage.getItem('tab')){ 
@@ -41,12 +49,12 @@ export default function (props: any) {
   }
 
   return (
-    <div style={color === 'dark' ? {backgroundColor: 'rgba(2, 4, 5, 0.7)', height: '80px'} : {backgroundColor: '#FFFFFF', height: '80px'}} className='w-full flex items-center px-12' >
-      <div className='flex item-center' >
-        <img onClick={()=> ClickHandler('')} src={Logo} alt='logo' className=' h-8 cursor-pointer' />
-        <p className={props.color === 'dark' ? 'ml-4 font-CircularStd-Regular text-3xl text-white' : 'ml-4 font-CircularStd-Regular text-3xl'} >Everest</p>
+    <div style={color === 'dark' ? {backgroundColor: 'rgba(2, 4, 5, 0.7)', height: '80px'} : {backgroundColor: '#FFFFFF', height: '80px'}} className='w-full flex items-center px-6 lg:px-12' >
+      <div onClick={()=> ClickHandler('')} className='flex cursor-pointer item-center' >
+        <img src={Logo} alt='logo' className=' h-8 ' />
+        <p className={color === 'dark' ? 'ml-4 font-CircularStd-Regular text-3xl text-white' : 'ml-4 font-CircularStd-Regular text-3xl'} >Everest</p>
       </div>
-      <div className='mx-auto flex item-center mt-2' >
+      <div className='mx-auto hidden lg:flex item-center mt-2' >
         {/* <Link to='/rider' > */}
           <p onClick={()=> ClickHandler('rider')} style={color === 'dark' ? {color: '#FFFFFF'}: {color: '#727272'}} className={tab === 'rider' ? 'font-CircularStd-Regular border-b border-white cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >Rider</p>
           {/* </Link>  */}
@@ -54,7 +62,7 @@ export default function (props: any) {
           <p onClick={()=> ClickHandler('driver')} style={color === 'dark' ? {color: '#FFFFFF'} : {color: '#727272'}} className={tab === 'driver' ? 'font-CircularStd-Regular border-b border-white cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >Driver</p>
           {/* </Link> */}
         {/* <Link to='/faq'  > */}
-          <p onClick={()=> ClickHandler('faq')} style={color === 'dark' ? {color: '#FFFFFF'} : {color: '#727272'}} className={tab === 'faq' ? 'font-CircularStd-Regular border-b border-white cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >FAQ</p>
+          <p onClick={()=> ClickHandler('faq')} style={color === 'dark' ? {color: '#FFFFFF'} : {color: '#727272', borderColor: '#727272'}} className={tab === 'faq' ? 'font-CircularStd-Regular border-b cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >FAQ</p>
           {/* </Link> */}
         {/* <Link to='/subscription'  > */}
           <p onClick={()=> ClickHandler('subscription')} style={color === 'dark' ? {color: '#FFFFFF'} : {color: '#727272'}} className={tab === 'subscription' ? 'font-CircularStd-Regular border-b border-white cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >Subscription</p>
@@ -63,7 +71,7 @@ export default function (props: any) {
           <p onClick={()=> ClickHandler('rider')} style={color === 'dark' ? {color: '#FFFFFF'} : {color: '#727272'}} className={tab === '' ? 'font-CircularStd-Regular border-b border-white cursor-pointer mx-6 pb-2 ' : 'font-CircularStd-Regular cursor-pointer mx-6 pb-2 '} >White paper</p>
           {/* // </Link> */}
       </div>
-      <button style={color === 'dark' ? {backgroundColor: '#FFF', color: '#222222'} : {backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl w-36 text-sm h-12' >Buy $EVR</button>
+      <button style={color === 'dark' ? {backgroundColor: '#FFF', color: '#222222'} : {backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl w-auto px-5 lg:px-0 lg:w-36 text-sm ml-auto lg:ml-0 h-12' >Buy $EVR</button>
     </div>
   )
 }

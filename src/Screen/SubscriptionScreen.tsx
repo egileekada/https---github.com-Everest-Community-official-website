@@ -1,0 +1,54 @@
+import { Input, Select } from '@chakra-ui/react'
+import React from 'react'
+import Header from '../assets/images/Header.png'
+import Footer from '../components/Footer'
+
+export default function SubscriptionScreen() {
+    return (
+        <div className='w-full h-full relative' >
+            {/* <div className='w-full fixed z-10' >
+              <Navbar color='dark' />
+            </div>  */}
+            <div className='relative w-full' > 
+                <img src={Header} className=''  alt='' />
+                <div className='absolute bottom-0 w-full flex justify-center px-14 ' > 
+                    <div className='text-white' >
+                        <p className='text-5xl font-CircularStd-Medium lg:w-505px ' >Subscribe to Everest rides as an organization</p>
+                        <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p> 
+                    </div>
+                    <div className='w-auto bg-white ml-6 text-black' > 
+                        <div className='bg-blue-300 w-full' />
+                        <div className='w-400px py-6 px-6 lg:-mb-20' >
+                            <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
+                            
+                            <div className='w-full' > 
+                                <div className='flex mt-4' >
+                                    <div className='mr-1 ' >
+                                        <p className='font-CircularStd-Regular text-sm ' >Business Email</p>
+                                        <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
+                                    </div>
+                                    <div className='ml-1 ' >
+                                        <p className='font-CircularStd-Regular text-sm ' >Phone Number</p>
+                                        <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
+                                    </div>
+                                </div>
+                                <p className='font-CircularStd-Regular text-sm mt-4' >Country</p>
+                                <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
+                                <p className='font-CircularStd-Regular text-sm mt-4' >Company Name</p>
+                                <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
+                                <p className='font-CircularStd-Regular text-sm mt-4' >Industry</p>
+                                <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
+                                <p className='font-CircularStd-Regular text-sm mt-4' >Exoected rides per month</p>
+                                <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Less than 100' />
+                                <button style={{backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl w-full text-sm h-12 mt-8' >Next</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='w-full ' > 
+                <Footer />
+            </div>
+        </div>
+    )
+}

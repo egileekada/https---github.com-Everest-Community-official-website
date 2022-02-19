@@ -1,10 +1,8 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react' 
 import Header from '../assets/images/Header.png'
 import Footer from '../components/Footer'
 import { Input } from '@chakra-ui/input'
-import { Select } from '@chakra-ui/select'
-import { Drawer, DrawerContent, Menu, useDisclosure } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/select' 
 
 export default function DriverScreen() {
 
@@ -99,10 +97,7 @@ export default function DriverScreen() {
     }
 
     return (
-        <div className='w-full h-full relative' >
-            {/* <div className='w-full fixed z-10' >
-              <Navbar color='dark' />
-            </div>  */}
+        <div className='w-full h-full relative' > 
             <div className='relative w-full' > 
                 <img src={Header} className=''  alt='' />
                 <div className='absolute bottom-0 w-full flex justify-center px-14 ' > 

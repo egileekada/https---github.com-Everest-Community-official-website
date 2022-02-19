@@ -8,8 +8,8 @@ export default function SecondSection() {
             <p className='text-2xl font-CircularStd-Bold text-white' >Everest’s in-built crypto wallet</p>
             <p className='mt-2 font-CircularStd-Regular text-white lg:w-505px text-center' >Everest’s in-built crypto wallet allows payments occur seamlessly between Drivers and Riders. Pay with EVR and enjoy the discounts, or pay with cash or your card.</p>
             <button style={{color: '#00A0FF'}} className='rounded-xl w-40 font-CircularStd-Regular bg-white mt-10 text-sm h-12' >Learn more</button>
-            <img src={Top} alt='topimage' className='absolute top-0 w-56 ml-505px' />
-            <img src={Bottom} alt='bottomimage' className='absolute bottom-0 w-350px mr-505px' />
+            <img src={Top} alt='topimage' className='absolute top-0 w-56 right-2 lg:ml-505px' />
+            <img src={Bottom} alt='bottomimage' className='absolute bottom-0 left-2 w-72 lg:w-350px lg:mr-505px' />
         </div>
     )
 }

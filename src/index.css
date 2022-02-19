@@ -23,6 +23,6 @@
 }
 
 
-.border-gradient-color {
+.first-gradient-color {
     border-image-source: linear-gradient(to left, #5C8AE5, #5E1C80);
   }

@@ -13,9 +13,12 @@ import Footer from '../components/Footer'
 
 export default function HomeScreen() {
   return (
-    <div className='w-full h-full' >
-        <div style={{backgroundColor: '#EEEEEE'}} className='w-full' >  
+    <div className=' w-screen lg:w-full ov h-full pt-14' >
+        <div className='w-full bg-firstcolor' >  
           <FirstSection />
+        </div>
+        <div className='w-full lg:hidden lg:mt-0 -mt-1 bg-everestdark lg:bg-02 flex flex-col ' > 
+          <SeventhSection />
         </div>
         <div style={{backgroundColor: '#00A0FF'}} className='w-full' >  
           <SecondSection />
@@ -33,7 +36,7 @@ export default function HomeScreen() {
         <div className='w-full' > 
           <SixthSection />
         </div>
-        <div style={{backgroundColor: '#020405'}} className='w-full ' > 
+        <div style={{backgroundColor: '#020405'}} className='w-full hidden lg:flex flex-col ' > 
           <SeventhSection />
         </div>
         <div style={{backgroundColor: '#0B85FD'}} className='w-full ' > 
