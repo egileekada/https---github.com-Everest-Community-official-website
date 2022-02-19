@@ -52,12 +52,12 @@ export default function SubscriptionScreen() {
                     <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
                     
                     <div className='w-full' > 
-                        <div className='flex mt-4' >
-                            <div className='mr-1 ' >
+                        <div className='flex flex-col mt-4' >
+                            <div className=' ' >
                                 <p className='font-CircularStd-Regular text-sm ' >Business Email</p>
                                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
                             </div>
-                            <div className='ml-1 ' >
+                            <div className=' ' >
                                 <p className='font-CircularStd-Regular text-sm ' >Phone Number</p>
                                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='...' />
                             </div>

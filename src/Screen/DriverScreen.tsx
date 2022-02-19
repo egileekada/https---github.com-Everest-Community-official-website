@@ -3,6 +3,9 @@ import Header from '../assets/images/Header.png'
 import Footer from '../components/Footer'
 import { Input } from '@chakra-ui/input'
 import { Select } from '@chakra-ui/select' 
+import PhoneInput from 'react-phone-input-2'
+
+import 'react-phone-input-2/lib/high-res.css'
 
 export default function DriverScreen() {
 
@@ -14,7 +17,18 @@ export default function DriverScreen() {
                 <p className='font-CircularStd-Regular text-sm mt-4' >Email Address</p>
                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='yourmail@hotmail.com' />
                 <p className='font-CircularStd-Regular text-sm mt-4' >Phone</p>
-                <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' />
+                <PhoneInput  
+                    country='ng'     
+                    inputStyle={{height: '3rem', width:'100%'}}
+                    enableSearch
+                    inputProps={{
+                        name: 'phone',
+                        required: true,
+                        autoFocus: true, 
+                        
+                    }}
+                /> 
+                {/* <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' /> */}
                 <p className='font-CircularStd-Regular text-sm mt-4' >City</p>
                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Location' />
                 <button onClick={()=> setTab(2)} style={{backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl w-full text-sm h-12 mt-8' >Next</button>
