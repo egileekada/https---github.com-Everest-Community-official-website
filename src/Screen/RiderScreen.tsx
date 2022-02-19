@@ -7,11 +7,11 @@ import Footer from '../components/Footer'
 export default function RiderScreen() {
     return (
         <div className='w-full h-full relative' >
-            <div className='relative w-full' > 
-                <img src={Header} className=''  alt='' />
-                <div className='absolute bottom-0 w-full flex justify-center items-center py-12 px-14 ' > 
+            <div style={{backgroundImage: "url(" + Header + ")", backgroundPosition:'center', backgroundRepeat: "no-repeat", backgroundSize: 'cover'}} className='relative w-full' > 
+                {/* <img src={Header} className='object-cover'  alt='' /> */}
+                <div className=' bottom-0 w-full flex lg:flex-row flex-col justify-center items-center py-12 pt-32 px-14 ' > 
                     <div className='text-white' >
-                        <p className='text-5xl font-CircularStd-Medium lg:w-505px ' >Get anywhere you want to get with convenience</p>
+                        <p className='lg:text-5xl text-3xl font-CircularStd-Medium lg:w-505px ' >Get anywhere you want to get with convenience</p>
                         <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p> 
                         <p className='my-4 lg:w-350px font-CircularStd-Regular' >Download the Everest App Now and enjoy the signup bonus of x EVR tokens.</p>
                         <p className='font-CircularStd-Regular' >Available on</p>
@@ -29,7 +29,7 @@ export default function RiderScreen() {
                             </button>
                         </div>
                     </div>
-                    <img src={Phone} alt='phone' style={{height: '540px'}} className='ml-20' />
+                    <img src={Phone} alt='phone' style={{height: '540px'}} className='lg:ml-20 lg:mt-0 mt-6' />
                 </div>
             </div>
             <div className='w-full ' > 

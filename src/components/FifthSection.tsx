@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function FifthSection() {
     return (
-        <div className='w-full flex flex-col justify-center py-20 px-6 items-center'>
+        <div className='w-full flex flex-col justify-center py-20 px-4 lg:px-6 items-center'>
             <p className='font-CircularStd-Medium text-xl' >Our Team</p>
 
-            <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10' >
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-10' >
                 <div className='flex flex-col items-center justify-center' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Israel Clement</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Co-founder, Chief Executive Officer</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Israel Clement</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Co-founder, Chief Executive Officer</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,8 +29,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Ebuka Okoroafor</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Co-founder, Chief Product Officer</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Ebuka Okoroafor</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Co-founder, Chief Product Officer</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,8 +48,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >George Adowei</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Lead Developer</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >George Adowei</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Lead Developer</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,8 +67,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Chris Steve</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Lead Product Designer</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Chris Steve</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Lead Product Designer</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +86,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Victor Jimmy</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Lead Graphics Designer</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Victor Jimmy</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Lead Graphics Designer</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,8 +105,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Supreme Winn</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Head of Marketing</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Supreme Winn</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Head of Marketing</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,8 +124,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Serena Francis</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Human Resource Manager</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Serena Francis</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Human Resource Manager</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,8 +143,8 @@ export default function FifthSection() {
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
-                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium text-xl' >Emmanuel Ojuyenum</p>
-                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm ' >Head of Operations</p>
+                    <p style={{color: '#222222'}} className=' mt-4 font-CircularStd-Medium lg:text-xl text-center ' >Emmanuel Ojuyenum</p>
+                    <p style={{color: '#222222'}} className='font-CircularStd-Regular text-sm text-center' >Head of Operations</p>
                     <div className='mt-4 flex items-center justify-center' >
                         <div style={{backgroundColor: 'rgba(11, 133, 253, 0.08)'}} className='w-12 h-12 cursor-pointer flex mx-2 justify-center items-center rounded-full' >
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

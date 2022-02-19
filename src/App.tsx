@@ -3,6 +3,7 @@ import { Drawer, DrawerContent } from '@chakra-ui/react';
 import React from 'react'; 
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';   
 import Navbar from './components/Navbar';
+import SideBar from './components/SideBar';
 import DriverScreen from './Screen/DriverScreen';
 import FaqScreen from './Screen/FaqScreen';
 import HomeScreen from './Screen/HomeScreen';
@@ -14,7 +15,7 @@ function App() {
   return ( 
     <Router>  
       <div className='w-full absolute z-50' style={{height: '80px'}} >
-        <Navbar />
+        <Navbar open={onOpen}  />
       </div>
       <div className=' lg:hidden flex' >
           <Drawer 
@@ -23,6 +24,7 @@ function App() {
               placement="left"
               onClose={onClose}  > 
               <DrawerContent>
+                <SideBar close={onClose} />
                   {/* <DrawerCloseButton  /> */}
                   {/* <Menu index={tab} close={onClose} mobile={true} tab={setTab} /> */}
               </DrawerContent>
