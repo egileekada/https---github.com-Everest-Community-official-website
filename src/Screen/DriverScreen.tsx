@@ -39,32 +39,32 @@ export default function DriverScreen() {
     const SecondStage =()=> {
         return(
             <div className='w-full' > 
-                <div className='flex mt-4' >
-                    <div className='mr-1 ' >
+                <div className='lg:flex mt-4' >
+                    <div className='lg:mr-1 ' >
                         <p className='font-CircularStd-Regular text-sm ' >First Name</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Your Frist Name' />
                     </div>
-                    <div className='ml-1 ' >
+                    <div className='lg:ml-1 lg:mt-0 mt-4 ' >
                         <p className='font-CircularStd-Regular text-sm ' >Last Name</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Your Last Name' />
                     </div>
                 </div>
-                <div className='flex mt-4' >
-                    <div className='mr-1 w-full ' >
+                <div className='lg:flex mt-4' >
+                    <div className='lg:mr-1 w-full ' >
                         <p className='font-CircularStd-Regular text-sm ' >Language</p>
                         <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='English' />
                     </div>
-                    <div className='ml-1 w-full ' >
+                    <div className='lg:ml-1 w-full lg:mt-0 mt-4  ' >
                         <p className='font-CircularStd-Regular text-sm ' >I have a car</p>
                         <Select size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Select' />
                     </div>
                 </div>
-                <div className='flex mt-4' >
-                    <div className='mr-1 ' >
+                <div className='lg:flex mt-4' >
+                    <div className='lg:mr-1 ' >
                         <p className='font-CircularStd-Regular text-sm ' >Vehicle Manufacturer</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='81234567890' />
                     </div>
-                    <div className='ml-1 ' >
+                    <div className='lg:ml-1 lg:mt-0 mt-4  ' >
                         <p className='font-CircularStd-Regular text-sm ' >Vehicle Model</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='81234567890' />
                     </div>
@@ -81,12 +81,12 @@ export default function DriverScreen() {
                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' />
                 <p className='font-CircularStd-Regular text-sm mt-4' >Driver Licence Number</p>
                 <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' />
-                <div className='flex mt-4' >
-                    <div className='mr-1 ' >
+                <div className='lg:flex mt-4' >
+                    <div className='lg:mr-1 mt-4 lg:mt-0 ' >
                         <p className='font-CircularStd-Regular text-sm ' >Picture of Driver Licence</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Your Frist Name' />
                     </div>
-                    <div className='ml-1 ' >
+                    <div className='lg:ml-1 mt-4 lg:mt-0 ' >
                         <p className='font-CircularStd-Regular text-sm ' >Driver Profile photo</p>
                         <Input size='lg' fontSize='sm' className='mt-2' backgroundColor='#F4F4F4' placeholder='Your Last Name' />
                     </div>
