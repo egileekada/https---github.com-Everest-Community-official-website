@@ -35,7 +35,7 @@ export default function Menu(props: any) {
     console.log(tab)
 
     return (
-        <div className='w-full h-screen pt-8 flex flex-col bg-olokun items-center overflow-y-auto' > 
+        <div className='w-full h-screen pt-8 flex flex-col bg-[#F4F4F4] items-center overflow-y-auto' > 
             <div className='w-full flex pt-4 pb-8' >
                 <div className='w-full flex flex-1' />
                 <p onClick={()=> props.close()} className='font-CircularStd-Bold text-lg cursor-pointer mr-8' style={{color:'#EB5757'}} >Close</p>
@@ -44,7 +44,7 @@ export default function Menu(props: any) {
                 {Array.map((item: any, index: any) => {
                     return( 
                         <div key={index} className='w-full px-3' > 
-                            <div onClick={()=> ClickHandler(item)} style={item.toLowerCase() === localStorage.getItem('index')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer my-4 py-4 px-6 rounded-md' > 
+                            <div onClick={()=> ClickHandler(item)} style={item.toLowerCase() === localStorage.getItem('index')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer my-1 py-4 px-6 rounded-md' > 
                                 <div className='w-full h-full flex flex-row items-center ' >  
                                     <p style={item.toLowerCase() === localStorage.getItem('index')+'' ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
                                 </div>
