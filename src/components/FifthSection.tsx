@@ -6,7 +6,7 @@ export default function FifthSection() {
             <p className='font-CircularStd-Medium text-xl' >Our Team</p>
 
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-10' >
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -25,7 +25,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -44,7 +44,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -63,7 +63,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -82,7 +82,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -101,7 +101,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -120,7 +120,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
@@ -139,7 +139,7 @@ export default function FifthSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center' >
+                <div className='flex flex-col items-center justify-center lg:my-0 my-2' >
                     <div className='w-28 rounded-full h-28 bg-gray-200' >
 
                     </div>
