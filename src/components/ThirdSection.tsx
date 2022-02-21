@@ -22,7 +22,7 @@ export default function ThirdSection() {
                 </div>
                 <div className='w-64 lg:mx-8  flex flex-col items-center' >
                     <img src={Percent} alt='percent' />
-                    <p className=' font-CircularStd-Medium text-center mt-2' >Everest is Easy to use and requires no Technical expertise</p>
+                    <p className=' font-CircularStd-Medium text-center mt-2' >Cheapest fares for Riders and No commission rates for Drivers</p>
                 </div>
             </div>
         </div>

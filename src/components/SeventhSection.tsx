@@ -4,6 +4,7 @@ import Gecko from '../assets/images/coingecko.png'
 import Market from '../assets/images/coinmarketcap.png'
 import Telegraph from '../assets/images/coin-telegraph.png'
 import Pay from '../assets/images/pay.png'
+import Reddit from '../assets/images/Reddit-logo.jpg'
 
 export default function SeventhSection() {
     return (
@@ -26,6 +27,9 @@ export default function SeventhSection() {
                 </div>
                 <div className='flex items-center lg:mx-4 my-6' >
                     <img src={Telegraph} alt='Telegraph' /> 
+                </div>
+                <div className='flex items-center lg:mx-4 my-6' >
+                    <img src={Reddit} className='w-48 px-4 bg-white' alt='Telegraph' /> 
                 </div>
             </div>
         </div>
