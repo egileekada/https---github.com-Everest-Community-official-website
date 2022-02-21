@@ -46,7 +46,7 @@ export default function Menu(props: any) {
                 {Array.map((item: any, index: any) => {
                     return( 
                         <div key={index} className='w-full px-3' > 
-                            <div onClick={()=> ClickHandler(item)} style={item.toLowerCase() === localStorage.getItem('index')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer my-1 py-4 px-6 rounded-md' > 
+                            <div onClick={()=> ClickHandler(item)} style={item.toLowerCase() === localStorage.getItem('index')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer py-4 px-6 rounded-md' > 
                                 <div className='w-full h-full flex flex-row items-center ' >  
                                     <p style={item.toLowerCase() === localStorage.getItem('index')+'' ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
                                 </div>
