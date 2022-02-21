@@ -33,7 +33,7 @@ function App() {
           <Drawer 
               size='xs'
               isOpen={isOpen}
-              placement="left"
+              placement="right"
               onClose={onClose}  > 
               <DrawerContent>
                 <SideBar close={onClose} />

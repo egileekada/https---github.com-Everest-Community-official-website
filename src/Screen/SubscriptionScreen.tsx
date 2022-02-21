@@ -49,7 +49,7 @@ export default function SubscriptionScreen() {
             <div className='w-auto bg-white lg:ml-6 mt-6 lg:hidden text-black' > 
                 <div className='bg-blue-300 w-full' />
                 <div className=' w-full lg:w-400px py-6 px-6 lg:-mb-20' >
-                    <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
+                    <p style={{lineHeight: '55px'}} className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
                     
                     <div className='w-full' > 
                         <div className='flex flex-col mt-4' >

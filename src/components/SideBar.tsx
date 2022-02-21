@@ -30,16 +30,17 @@ export default function Menu(props: any) {
             navigate('/')
         }
         props.close();
-    }  
-  
-    console.log(localStorage.getItem('index')+'')
-    console.log(tab)
+    }   
 
     return (
         <div className='w-full h-screen pt-8 flex flex-col bg-[#F4F4F4] items-center overflow-y-auto' > 
             <div className='w-full flex pt-4 pb-8' >
                 <div className='w-full flex flex-1' />
-                <p onClick={()=> props.close()} className='font-CircularStd-Bold text-lg cursor-pointer mr-8' style={{color:'#EB5757'}} >Close</p>
+                <div onClick={()=> props.close()} style={{boxShadow: '0px 1px 7px rgba(0, 0, 0, 0.12)'}} className='p-3 rounded-full bg-white mr-6' > 
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8L1 15M1 1L8 8L1 1ZM8 8L15 15L8 8ZM8 8L15 1L8 8Z" stroke="#0B85FD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div> 
             </div> 
             <div className='w-full mt-6' >
                 {Array.map((item: any, index: any) => {
