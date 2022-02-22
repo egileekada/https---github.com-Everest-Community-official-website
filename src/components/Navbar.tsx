@@ -1,9 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react' 
 import { useNavigate } from 'react-router-dom';
 import Logo from '../assets/images/logo.png'
 
-export default function (props: any) {
+export default function Navbar (props: any) {
 
   const [tab, setTab] = React.useState('')
   const [color, setColor] = React.useState('')
@@ -24,7 +23,7 @@ export default function (props: any) {
     }
 
     if(tab === ''){ 
-        navigate('/'+tab) 
+        navigate('/'+tab)  
     } else if(tab === 'rider'){
         navigate('/'+tab)
     } else if(tab === 'driver'){  
@@ -35,16 +34,16 @@ export default function (props: any) {
       navigate('/'+tab)
     }   
     localStorage.setItem('index', tab)
-  }, [tab, color])
+  }, [tab, color, ])
 
   React.useEffect(() => {
     if(localStorage.getItem('tab')){ 
-      setTab(localStorage.getItem('tab')+'')
-    } 
+      setTab('')
+    }  
   }, []) 
 
   const ClickHandler =(item: any)=>{  
-    setTab(item)
+    setTab(item) 
   }
 
   return (
