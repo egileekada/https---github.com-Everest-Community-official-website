@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
 import Graph from '../assets/images/Graph.png'
+import SmallGraph from '../assets/images/smallgraph.png'
 import ForthSection from '../components/ForthSection'
 import FifthSection from '../components/FifthSection'
 import SixthSection from '../components/SixthSection'
@@ -23,7 +24,8 @@ export default function HomeScreen() {
         <div className='w-full' >  
           <ThirdSection />
         </div>
-        <img src={Graph}  alt='graph' />
+        <img src={Graph}  alt='graph' className='lg:flex hidden' />
+        <img src={SmallGraph}  alt='smallgraph' className='lg:hidden' />
         <div className='w-full' > 
           <ForthSection />
         </div>

@@ -4,8 +4,8 @@ export default function ForthSection() {
 
     const Year =(item: any)=> {
         return(
-            <div style={{border: '1px solid #0B85FD'}} className=' mx-auto w-28 h-28 rounded-full flex items-center justify-center' >
-                <div style={{backgroundColor: '#0B85FD'}} className='w-16 h-16 rounded-full flex items-center justify-center text-white font-CircularStd-Medium' >
+            <div className=' lg:mx-auto lg:w-28 lg:h-28 lg:border lg:border-[#0B85FD] rounded-full lg:flex items-center justify-center' >
+                <div className='lg:w-16 lg:h-16 lg:bg-[#0B85FD] lg:text-white rounded-full text-[#00A0FF] text-2xl lg:flex items-center justify-center lg:text-base lg:text-white font-CircularStd-Medium' >
                     {item}
                 </div>
             </div>
@@ -20,19 +20,19 @@ export default function ForthSection() {
                 <div className='flex lg:flex-row flex-col my-8' >
                     <div className='' >
                         <div className='w-auto' > 
-                            <p style={{color: '#0B85FD'}} className='font-CircularStd-Medium text-xl' >Q1 <span style={{color: '#727272'}}>2022</span></p>
+                            <p style={{color: '#00A0FF'}} className='font-CircularStd-Medium text-xl' >Q1 <span style={{color: '#727272'}}>2022</span></p>
                             <div style={{backgroundColor: 'rgba(0, 160, 255, 0.08)'}} className='py-4 rounded-md text-sm px-8 font-CircularStd-Medium' >
                                 <p style={{color: '#0B85FD'}}  className='lg:w-72' > Website Launch, MVP Development, IDO/Exchange Listing</p>
                             </div>
                         </div>
                         <div className='w-auto mt-8 lg:hidden' > 
-                            <p style={{color: '#0B85FD'}} className='font-CircularStd-Medium text-xl' >Q2 <span style={{color: '#727272'}}>2022</span></p>
+                            <p style={{color: '#00A0FF'}} className='font-CircularStd-Medium text-xl' >Q2 <span style={{color: '#727272'}}>2022</span></p>
                             <div style={{backgroundColor: 'rgba(0, 160, 255, 0.08)'}} className='py-4 rounded-md text-sm px-8 font-CircularStd-Medium' >
                                 <p style={{color: '#0B85FD'}}  className='lg:w-72' >Full MVP Product Launch (Port Harcourt)</p>
                             </div>
                         </div>
                         <div className='w-auto mt-8' > 
-                            <p style={{color: '#0B85FD'}} className='font-CircularStd-Medium text-xl' >Q3 <span style={{color: '#727272'}}>2022</span></p>
+                            <p style={{color: '#00A0FF'}} className='font-CircularStd-Medium text-xl' >Q3 <span style={{color: '#727272'}}>2022</span></p>
                             <div style={{backgroundColor: 'rgba(0, 160, 255, 0.08)'}} className='py-4 rounded-md text-sm px-8 font-CircularStd-Medium' >
                                 <p style={{color: '#0B85FD'}}  className='lg:w-72' >- Intercity Rides, Route Rides Feature Launch, Abuja Release</p>
                             </div>
@@ -47,13 +47,13 @@ export default function ForthSection() {
                     </div>
                     <div className='lg:mt-10' >
                         <div className='w-auto lg:flex hidden flex-col ' > 
-                            <p style={{color: '#0B85FD'}} className='font-CircularStd-Medium text-xl' >Q2 <span style={{color: '#727272'}}>2022</span></p>
+                            <p style={{color: '#00A0FF'}} className='font-CircularStd-Medium text-xl' >Q2 <span style={{color: '#727272'}}>2022</span></p>
                             <div style={{backgroundColor: 'rgba(0, 160, 255, 0.08)'}} className='py-4 rounded-md text-sm px-8 font-CircularStd-Medium' >
                                 <p style={{color: '#0B85FD'}}  className='lg:w-72' >Full MVP Product Launch (Port Harcourt)</p>
                             </div>
                         </div>
                         <div className='w-auto mt-8' > 
-                            <p style={{color: '#0B85FD'}} className='font-CircularStd-Medium text-xl' >Q4 <span style={{color: '#727272'}}>2022</span></p>
+                            <p style={{color: '#00A0FF'}} className='font-CircularStd-Medium text-xl' >Q4 <span style={{color: '#727272'}}>2022</span></p>
                             <div style={{backgroundColor: 'rgba(0, 160, 255, 0.08)'}} className='py-4 rounded-md text-sm px-8 font-CircularStd-Medium' >
                                 <p style={{color: '#0B85FD'}}  className='lg:w-72' >Lagos and Ibadan Release</p>
                             </div>
