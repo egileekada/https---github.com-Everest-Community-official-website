@@ -1,19 +1,40 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+    
+//   const [tab, setTab] = React.useState(localStorage.getItem('tab')+'')
+//   const navigate = useNavigate();
+
+//   React.useEffect(() => {  
+//     localStorage.setItem('tab', tab)
+//   }, [tab])
+
+//   const ClickHandler =(item: any)=>{  
+//     setTab(item)  
+//     navigate('/faq')
+//   }  
+
+//   React.useEffect(() => {
+//     if(localStorage.getItem('tab')){ 
+//       setTab('')
+//     }  
+//   }, []) 
+
     return (
         <div className='w-full px-6 py-20 flex flex-col justify-center items-center' >
             <div className='flex ' >
-                <div className='lg:mx-6'>
+                <div className='lg:mx-6 mx-3'>
                     <p style={{color: '#152028'}} className='font-CircularStd-Bold text-lg my-2' >Everest</p>
-                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2' >Privacy Policy</p>
-                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2' >Terms of service</p>
-                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2' >FAQ</p>
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >Privacy Policy</p>
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >Terms of service</p>
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >FAQ</p>
                 </div>
-                <div className='lg:mx-6' >
+                <div className='lg:mx-6 mx-3' >
                     <p style={{color: '#152028'}} className='font-CircularStd-Bold text-lg my-2' >Resource</p>
-                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2' >White paper</p>
-                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2' >Token page</p> 
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >White paper</p>
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >Token page</p> 
+                    <p style={{color: '#727272'}} className='font-CircularStd-Regular my-2 cursor-pointer' >Contact Us</p> 
                 </div>
             </div>
 

@@ -1,7 +1,12 @@
 import React from 'react'
 import Footer from '../components/Footer'
 
-export default function FaqScreen() {
+export default function FaqScreen() { 
+
+  React.useEffect(() => { 
+    localStorage.setItem('index', 'faq')
+  }, []) 
+
     return (
         <div className='w-full h-full pt-20' style={{backgroundColor: "#F4F4F4"}} >
             <div className='w-full h-full flex flex-col items-center justify-center lg:py-20 px-6 py-12 lg:px-20' >

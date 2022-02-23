@@ -116,13 +116,13 @@ export default function DriverScreen() {
             {/* <img src={Header} className='object-cover'  alt='' /> */}
                 <div className=' lg:absolute bottom-0 w-full flex justify-center px-6 lg:px-14 mt-auto pt-32 ' > 
                     <div className='text-white' >
-                        <p style={{lineHeight: '55px'}} className='lg:text-4xl text-3xl font-CircularStd-Medium lg:w-505px ' >Sign up as a Driver for Everest and earn bigs</p>
-                        <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p> 
+                        <p style={{lineHeight: '55px'}} className='lg:text-4xl text-3xl font-CircularStd-Medium lg:w-505px ' >Sign up as a Driver for Everest and earn big</p>
+                        {/* <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p>  */}
                         
                     </div>
                     <div className='w-auto bg-white ml-6 lg:flex flex-col hidden text-black' > 
                         <div className='bg-blue-300' style={tab === 1 ? {width: '25%', height: '6px'}: tab === 2 ? {width: '50%', height: '6px'}: tab === 3 ? {width: '75%', height: '6px'}: tab === 4 ? {width: '100%', height: '6px'}: {}} />
-                        <div className='w-400px py-6 px-6' >
+                        <div className='w-400px py-6 px-6 border-b border-black' >
                             <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
                             {tab === 1 ? 
                                 <FirstStage/>

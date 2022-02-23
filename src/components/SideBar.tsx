@@ -3,31 +3,43 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Menu(props: any) {
  
-    const Array = [ 'Rider', 'Driver', 'FAQ', 'Subscription', 'White paper']  
+    const Array = ['Home', 'Rider', 'Driver', 'FAQ', 'Subscription', 'White paper']  
     const navigate = useNavigate(); 
-    const [tab, setTab] = React.useState(localStorage.getItem('index')+'') 
+    const [tab, setTab] = React.useState(localStorage.getItem('tab')+'') 
 
-    React.useEffect(() => {
-        localStorage.setItem('index', tab)
-        localStorage.setItem('tab', tab.toLowerCase()) 
+    React.useEffect(() => { 
+
+        localStorage.setItem('tab', tab)   
+
+        if(tab !== ''){
+            localStorage.setItem('color', 'dark') 
+        }else { 
+            localStorage.setItem('color', '') 
+        } 
+    
+        if(tab === "faq"){
+            localStorage.setItem('color', '') 
+        }
+        if(localStorage.getItem('tab')+'' === ''){ 
+            navigate('/'+localStorage.getItem('tab')+'')  
+        } if(localStorage.getItem('tab')+'' === ''){ 
+            navigate('/'+localStorage.getItem('tab')+'')  
+        }  else if(localStorage.getItem('tab')+'' === 'rider'){
+            navigate('/'+localStorage.getItem('tab')+'')
+        } else if(localStorage.getItem('tab')+'' === 'driver'){  
+            navigate('/'+localStorage.getItem('tab')+'')
+        } else if(localStorage.getItem('tab')+'' === 'faq'){  
+        navigate('/'+localStorage.getItem('tab')+'') 
+        } else if(localStorage.getItem('tab')+'' === 'subscription'){  
+        navigate('/'+tab)
+        }   
     },[tab]) 
 
     const ClickHandler =(index: any)=> { 
-        if(index === 'Rider'){
-            navigate('/rider') 
-            setTab('rider')
-        } else if(index === 'Driver'){
-            navigate('/driver')
-            setTab('driver')
-        } else if(index === 'FAQ'){
-            navigate('/faq')
-            setTab('faq')
-        } else if(index === 'Subscription'){
-            navigate('/subscription')
-            setTab('subscription')
-        }else{ 
+        if(index === 'home'){
+            setTab('') 
+        } else { 
             setTab(index) 
-            navigate('/')
         }
         props.close();
     }   
@@ -44,15 +56,27 @@ export default function Menu(props: any) {
             </div> 
             <div className='w-full mt-6' >
                 {Array.map((item: any, index: any) => {
-                    return( 
-                        <div key={index} className='w-full px-3' > 
-                            <div onClick={()=> ClickHandler(item)} style={item.toLowerCase() === localStorage.getItem('index')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer py-4 px-6 rounded-md' > 
-                                <div className='w-full h-full flex flex-row items-center ' >  
-                                    <p style={item.toLowerCase() === localStorage.getItem('index')+'' ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
+                    if(item === 'Home'){
+                        return( 
+                            <div key={index} className='w-full px-3' > 
+                                <div onClick={()=> ClickHandler(item.toLowerCase())} style={localStorage.getItem('tab')+'' === '' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer py-4 px-6 rounded-md' > 
+                                    <div className='w-full h-full flex flex-row items-center ' >  
+                                        <p style={localStorage.getItem('tab')+'' === ''  ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
+                        )
+                    } else {
+                        return( 
+                            <div key={index} className='w-full px-3' > 
+                                <div onClick={()=> ClickHandler(item.toLowerCase())} style={item.toLowerCase() === localStorage.getItem('tab')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer py-4 px-6 rounded-md' > 
+                                    <div className='w-full h-full flex flex-row items-center ' >  
+                                        <p style={item.toLowerCase() === localStorage.getItem('tab')+'' ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
                 })}
             </div> 
         </div>

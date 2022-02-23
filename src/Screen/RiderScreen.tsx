@@ -1,5 +1,4 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react' 
 import Header from '../assets/images/Header.png'
 import Phone from '../assets/images/phone.png'
 import Footer from '../components/Footer'
@@ -12,7 +11,7 @@ export default function RiderScreen() {
                 <div className=' bottom-0 w-full flex lg:flex-row flex-col justify-center items-center py-12 pt-32 px-14 ' > 
                     <div className='text-white' >
                         <p style={{lineHeight: '55px'}} className='lg:text-5xl text-3xl font-CircularStd-Medium lg:w-505px ' >Get anywhere you want to get with convenience</p>
-                        <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p> 
+                        {/* <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p>  */}
                         <p className='my-4 lg:w-350px font-CircularStd-Regular' >Download the Everest App Now and enjoy the signup bonus of x EVR tokens.</p>
                         <p className='font-CircularStd-Regular' >Available on</p>
                         <div className='flex my-4' >  
