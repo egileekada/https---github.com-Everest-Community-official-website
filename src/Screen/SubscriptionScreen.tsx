@@ -14,7 +14,7 @@ export default function SubscriptionScreen() {
                 <div className=' w-full flex justify-center px-6 lg:px-14 mt-auto pt-32 ' > 
                     <div className='text-white' >
                         <p className='lg:text-4xl text-3xl font-CircularStd-Medium lg:w-505px ' >Subscribe to Everest rides as an organization</p>
-                        {/* <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p>  */}
+                <p className=' lg:w-505px my-4 text-white font-CircularStd-Regular' >Have a culture by giving staffs and stakeholders of your organization the opportunity to have exquisite experience of excellent ride and logistic services on Everest, and enjoy discounts with the $EVR token.</p>
                     </div>
                     <div className='w-auto bg-white ml-6 hidden lg:flex text-black' > 
                         {/* <div className='bg-blue-300 w-full' /> */}
