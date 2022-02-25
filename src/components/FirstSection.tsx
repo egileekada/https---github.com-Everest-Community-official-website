@@ -6,7 +6,7 @@ export default function FirstSection() {
         <div className=' w-full flex flex-col lg:flex-row px-6 lg:px-14 py-20 relative' >
             <div className='w-full relative z-20' >
                 <p style={{lineHeight: '55px'}} className='lg:text-5xl text-3xl font-CircularStd-Medium text-black lg:w-505px ' >Revolutionary Transportation at Your Fingertips</p>
-                <p className=' lg:w-505px my-4 lg:text-72 font-CircularStd-Regular' >Get the quickest and safest transportation and logistics services with Everest, Anytime and Anywhere Africa’s No.1 Mobility As A Service platform.</p>
+                <p className=' lg:w-505px my-4 lg:text-72 font-CircularStd-Regular' >Get the quickest and safest transportation and logistics services with Everest, Anytime and Anywhere<br/> Africa’s No.1 Mobility As A Service platform.</p>
                 <div className='flex lg:flex-row flex-col' >  
                     <button className='rounded-xl bg-0b lg:w-36 text-white lg:px-0 px-5 text-sm h-12' >Buy $EVR</button>
                     <button style={{backgroundColor: 'rgba(0, 160, 255, 0.08)', color: '#00A0FF'}} className='rounded-xl flex items-center justify-center w-auto px-5 lg:mt-0 mt-4 lg:ml-5 text-sm h-12' >
