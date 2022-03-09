@@ -13,13 +13,13 @@ export default function SubscriptionScreen() {
             {/* <img src={Header} className='object-cover'  alt='' /> */}
                 <div className=' w-full flex justify-center px-6 lg:px-14 mt-auto pt-32 ' > 
                     <div className='text-white' >
-                        <p className='lg:text-4xl text-3xl font-CircularStd-Medium lg:w-505px ' >Subscribe to Everest rides as an organization</p>
+                        <p className='lg:text-4xl text-3xl font-CircularStd-Medium lg:w-505px ' >Subscribe to Everest rides as an individual or organization</p>
                 <p className=' lg:w-505px my-4 text-white font-CircularStd-Regular' >Have a culture by giving staffs and stakeholders of your organization the opportunity to have exquisite experience of excellent ride and logistic services on Everest, and enjoy discounts with the $EVR token.</p>
                     </div>
                     <div className='w-auto bg-white ml-6 hidden lg:flex text-black' > 
                         {/* <div className='bg-blue-300 w-full' /> */}
                         <div className='w-400px py-6 px-6 border-b border-black ' >
-                            <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
+                            <p className='font-CircularStd-Medium text-xl' >Subscribe below</p>
                             
                             <div className='w-full' > 
                                 <div className='flex mt-4' >

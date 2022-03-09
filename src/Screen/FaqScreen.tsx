@@ -78,7 +78,7 @@ export default function FaqScreen() {
                         </p>
                     </div> 
                 </div> 
-                <button style={{backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl px-12 mt-16 text-sm h-12' >Sign us with Everest as a driver</button>
+                <button style={{backgroundColor: '#0B85FD', color: '#FFF'}} className='rounded-xl px-12 mt-16 text-sm h-12' >Sign up as a driver with Everest</button>
             </div>
             <div className='w-full bg-white ' > 
                 <Footer />

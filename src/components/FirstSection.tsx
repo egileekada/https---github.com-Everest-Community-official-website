@@ -16,7 +16,7 @@ export default function FirstSection() {
                     </button>
                 </div>
                 <p className='my-4 text-22 lg:w-350px font-CircularStd-Regular' >Download the Everest App Now and enjoy the signup bonus of x EVR tokens.</p>
-                <p className=' text-52 font-CircularStd-Regular' >Available on</p>
+                <p className=' text-52 font-CircularStd-Regular' >Coming soon on</p>
                 <div className='flex my-4' >  
                     <button className=' text-00a rounded-xl border font-CircularStd-Regular flex items-center justify-center border-indigo-500/75 w-36 ml-5 text-sm py-3' >
                         <svg className='mr-2' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
