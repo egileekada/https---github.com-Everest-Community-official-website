@@ -44,6 +44,10 @@ export default function Menu(props: any) {
         props.close();
     }   
 
+    const WhitepaperClickHandler = () => {
+      window.open(`/whitepaper.pdf`, "_blank");
+    }
+
     return (
         <div className='w-full h-screen pt-8 flex flex-col bg-[#F4F4F4] items-center overflow-y-auto' > 
             <div className='w-full flex pt-4 pb-8' >
@@ -66,16 +70,62 @@ export default function Menu(props: any) {
                                 </div>
                             </div>
                         )
-                    } else {
-                        return( 
-                            <div key={index} className='w-full px-3' > 
-                                <div onClick={()=> ClickHandler(item.toLowerCase())} style={item.toLowerCase() === localStorage.getItem('tab')+'' ? {backgroundColor: '#1084FA'} : {color: '#222222'}} className='w-full cursor-pointer py-4 px-6 rounded-md' > 
-                                    <div className='w-full h-full flex flex-row items-center ' >  
-                                        <p style={item.toLowerCase() === localStorage.getItem('tab')+'' ? {color: '#FFF'} : {color: '#222222'}} className=' font-CircularStd-Medium lg:text-sm' >{item}</p>
-                                    </div>
-                                </div>
+                    } else if (item === "White paper") {
+                      return (
+                        <div key={index} className="w-full px-3">
+                          <div
+                            onClick={() => WhitepaperClickHandler()}
+                            style={
+                              localStorage.getItem("tab") + "" === ""
+                                ? { backgroundColor: "#1084FA" }
+                                : { color: "#222222" }
+                            }
+                            className="w-full cursor-pointer py-4 px-6 rounded-md"
+                          >
+                            <div className="w-full h-full flex flex-row items-center ">
+                              <p
+                                style={
+                                  localStorage.getItem("tab") + "" === ""
+                                    ? { color: "#FFF" }
+                                    : { color: "#222222" }
+                                }
+                                className=" font-CircularStd-Medium lg:text-sm"
+                              >
+                                {item}
+                              </p>
                             </div>
-                        )
+                          </div>
+                        </div>
+                      );
+                    } else {
+                      return (
+                        <div key={index} className="w-full px-3">
+                          <div
+                            onClick={() => ClickHandler(item.toLowerCase())}
+                            style={
+                              item.toLowerCase() ===
+                              localStorage.getItem("tab") + ""
+                                ? { backgroundColor: "#1084FA" }
+                                : { color: "#222222" }
+                            }
+                            className="w-full cursor-pointer py-4 px-6 rounded-md"
+                          >
+                            <div className="w-full h-full flex flex-row items-center ">
+                              <p
+                                style={
+                                  item.toLowerCase() ===
+                                  localStorage.getItem("tab") + ""
+                                    ? { color: "#FFF" }
+                                    : { color: "#222222" }
+                                }
+                                className=" font-CircularStd-Medium lg:text-sm"
+                              >
+                                {item}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      );
                     }
                 })}
             </div> 

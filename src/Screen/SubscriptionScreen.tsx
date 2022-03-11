@@ -19,7 +19,7 @@ export default function SubscriptionScreen() {
                     <div className='w-auto bg-white ml-6 hidden lg:flex text-black' > 
                         {/* <div className='bg-blue-300 w-full' /> */}
                         <div className='w-400px py-6 px-6 border-b border-black ' >
-                            <p className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
+                            <p className='font-CircularStd-Medium text-xl' >Signup as an organization below</p>
                             
                             <div className='w-full' > 
                                 <div className='flex mt-4' >
@@ -49,7 +49,7 @@ export default function SubscriptionScreen() {
             <div className='w-auto bg-white lg:ml-6 mt-6 lg:hidden text-black' > 
                 <div className='bg-blue-300 w-full' />
                 <div className=' w-full lg:w-400px py-6 px-6 lg:-mb-20' >
-                    <p style={{lineHeight: '55px'}} className='font-CircularStd-Medium text-xl' >Signup as a driver below</p>
+                    <p style={{lineHeight: '55px'}} className='font-CircularStd-Medium text-xl' >Signup as an organization below</p>
                     
                     <div className='w-full' > 
                         <div className='flex flex-col mt-4' >
