@@ -12,9 +12,10 @@ export default function FirstSection() {
             Revolutionary Transportation at Your Fingertips
           </p>
           <p className=" lg:w-505px my-4 lg:text-72 font-CircularStd-Regular">
-            Get the quickest and safest transportation and logistics services
-            with Everest, Anytime and Anywhere
-            <br /> Africa’s No.1 Mobility As A Service platform.
+            Experience transportation and logistics services with Everest in a
+            new kind of way, at any time, to anywhere.
+            <br />
+            Africa’s No.1 Blockchain-Powered Mobility-As-A-Service Platform.
           </p>
           <div className="flex lg:flex-row flex-col">
             <button className="rounded-xl bg-0b lg:w-36 text-white lg:px-0 px-5 text-sm h-12">
@@ -50,7 +51,7 @@ export default function FirstSection() {
             Download the Everest App Now and enjoy the signup bonus of x EVR
             tokens.
           </p>
-          <p className=" text-52 font-CircularStd-Regular">Available on</p>
+          <p className=" text-52 font-CircularStd-Regular">Coming soon on</p>
           <div className="flex my-4">
             <button className=" text-00a rounded-xl border font-CircularStd-Regular flex items-center justify-center border-indigo-500/75 w-36 ml-5 text-sm py-3">
               <svg
