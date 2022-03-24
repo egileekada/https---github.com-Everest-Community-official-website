@@ -4,10 +4,9 @@ import React from 'react'
 
 export default function SendMessage() {
     return (
-        <div className='w-full py-12 bg-[#F9FCFF] flex flex-col justify-center items-center' >
-            <p className=' font-CircularStd-Bold text-3xl text-[#333333]' >Send us a message</p>
-            
-            <div className='lg:w-600px  lg:px-0 px-6' >
+        <div className='w-full py-12  lg:px-0 px-6 bg-[#F9FCFF] flex flex-col lg:justify-center lg:items-center' >
+            <p className=' font-CircularStd-Bold text-3xl text-[#333333]' >Send us a message</p> 
+            <div className='lg:w-600px' >
                 <div className='w-auto flex lg:flex-row flex-col items-center mt-12' > 
                     <div className='w-full' >
                         <p className='text-sm font-CircularStd-Regular mb-1 text-[#222]' >Full name</p>
