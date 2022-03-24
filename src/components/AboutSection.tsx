@@ -7,8 +7,7 @@ export default function AboutSection() {
             <p className=' font-CircularStd-Bold text-3xl text-white' >About our project</p>
             <p className='text-white font-CircularStd-Regular my-4' >Subscribe to our Newsletter to stay up to date</p>
             <div className=' flex items-center' > 
-                <Input  size='lg' fontSize='sm' backgroundColor='#F4F4F4' placeholder='Email'  />
-
+                <Input  size='lg' fontSize='sm' backgroundColor='#F4F4F4' placeholder='Email'  /> 
             <button  style={{backgroundColor: '#FFF', color: '#00A0FF'}} className='rounded-lg px-6 ml-4 text-sm h-12' >Submit</button>
             </div>
             <p className='text-white font-CircularStd-Regular my-4' >Click here to read our white paper</p>
