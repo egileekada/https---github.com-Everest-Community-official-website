@@ -123,7 +123,7 @@ export default function DriverScreen() {
                     <div className='w-auto bg-white ml-6 lg:flex flex-col hidden text-black' > 
                         <div className='bg-blue-300' style={tab === 1 ? {width: '25%', height: '6px'}: tab === 2 ? {width: '50%', height: '6px'}: tab === 3 ? {width: '75%', height: '6px'}: tab === 4 ? {width: '100%', height: '6px'}: {}} />
                         <div className='w-400px py-6 px-6 border-b border-black' >
-                            <p className='font-CircularStd-Medium text-xl' >Sign up as organisation</p>
+                            <p className='font-CircularStd-Medium text-xl' >Sign up as a driver</p>
                             {tab === 1 ? 
                                 <FirstStage/>
                                 :tab === 2 ? 

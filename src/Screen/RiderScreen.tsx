@@ -13,7 +13,7 @@ export default function RiderScreen() {
                         <p style={{lineHeight: '55px'}} className='lg:text-5xl text-3xl font-CircularStd-Medium lg:w-505px ' >Get anywhere you want to get with convenience</p>
                         {/* <p className=' lg:w-505px my-4 font-CircularStd-Regular' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh libero elit faucibus egestas interdum. !</p>  */}
                         <p className='my-4 lg:w-350px font-CircularStd-Regular' >Download the Everest App Now and enjoy the signup bonus of x EVR tokens.</p>
-                        <p className='font-CircularStd-Regular' >Available on</p>
+                        <p className='font-CircularStd-Regular' >Coming on</p>
                         <div className='flex my-4' >  
                             <button style={{ border: '1px solid'}} className='rounded-xl flex items-center justify-center border-gradient-color w-36 text-sm py-3' >
                                 <svg className='mr-2' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
