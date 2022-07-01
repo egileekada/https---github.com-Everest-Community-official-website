@@ -177,7 +177,7 @@ export default function Navbar (props: any) {
               : "font-CircularStd-Regular cursor-pointer mx-6 pb-2 "
           }
         >
-          White paper
+          Blue paper
         </a>
         {/* // </Link> */}
       </div>

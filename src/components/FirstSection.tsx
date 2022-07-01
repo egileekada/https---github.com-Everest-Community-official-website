@@ -44,7 +44,7 @@ export default function FirstSection() {
                   fill="#00A0FF"
                 />
               </svg>
-              Read white paper
+              Read blue paper
             </a>
           </div>
           <p className="my-4 text-22 lg:w-350px font-CircularStd-Regular">
